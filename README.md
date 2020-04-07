@@ -1,9 +1,8 @@
 ## React-Tutorial
 
 ### NPM
-npm install
-
-npm install redux
+* npm install
+* npm install redux
 
 ### JSX
 자바스크립트의 문법 확장
