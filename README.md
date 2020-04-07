@@ -17,3 +17,12 @@
 ### 이벤트
 * 이벤트 이름은 camelCase로 설정해야 한다. onclick -> onClick
 * 이벤트에 전달해주는 값은 함수여야 한다. onClick={this.handleAdd()} 이 문장은 렌더링을 할 때마다 해당 함수가 호출된다. 만약 함수 내부에 setState 함수가 호출된다면 (렌더링 -> 함수 호출 -> setState -> 렌더링 -> 함수호출 -> setState) 무한반복의 위험이 있다.
+
+### Life Cycle
+* constructor : 컴포넌트가 생성될 때 호출된다.
+* componentWillMount : 컴포넌트 렌더링 이전에 호출된다.
+* componentDidMount : 컴포넌트가 렌더링된 후 호출된다.
+* componentWillReceiveProps : 컴포넌트가 새로운 props를 받으면 호출된다.
+* shouldComponentUpdate : 기본적으로 true를 반환하지만 조건에 따라 false를 반환하면 React가 render() 함수를 호출하지 않는다.
+* componentDidUpdate : render() 함수 이후에 호출된다.
+* componentWillUnmount : 컴포넌트가 필요하지 않을  호출된다.
