@@ -127,6 +127,7 @@ class Person extends Component {
   }
 
   render() {
+    console.log('Person render', this.props.person.id);
     const tdStyle = {border: '1px solid #000'};
 
     return (
