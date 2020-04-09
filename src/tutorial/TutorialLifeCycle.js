@@ -52,6 +52,7 @@ class TutorialLifeCycle extends Component {
   }
 
   render() {
+    console.log('render');
     const style = {padding: '5rem'};
 
     return (
