@@ -2,6 +2,7 @@
 
 ### NPM
 * npm install
+* npm install immutable
 * npm install redux
 
 ### JSX
