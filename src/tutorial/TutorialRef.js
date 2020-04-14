@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * DOM 에 직접 접근이 필요할 경우 ref 사용
+ */
 class TutorialRef extends React.Component {
 
     constructor(props) {
@@ -17,7 +20,7 @@ class TutorialRef extends React.Component {
     render() {
         return (
             <div>
-                <h1>ref 사용법</h1>
+                <h1>ref 사용법(DOM 에 직접 접근이 필요할 경우)</h1>
                 <input ref={ref => {this.input = ref}}></input>
                 <button onClick={this.handleFocus}>포커스</button>
             </div>
